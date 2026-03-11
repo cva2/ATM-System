@@ -260,15 +260,15 @@ void process3() {
   
   switch(choice){
     case 1:
-    cout << "The Balance In This Card Is: " << BlcCard2 << endl;
+    cout << "The Balance In This Card Is: " << BlcCard3 << endl;
     break;
 
     case 2:
       int withD;
       cout << "Enter The Money You Need To Withdraw\n";
       cin >> withD;
-      if(withD <= BlcCard2){
-        BlcCard2 -= withD;
+      if(withD <= BlcCard3){
+        BlcCard3 -= withD;
         cout << "Process Is Done\n";
       } else {
         int i;
@@ -285,7 +285,7 @@ void process3() {
       cout << "\nTo Know About Your Balance After This Process Enter 1\n";
       cin >> again1;
       if(again1 == true)
-        cout << "Your Balance After Deposit Is: " << BlcCard2;
+        cout << "Your Balance After Deposit Is: " << BlcCard3;
 
       break;
 
@@ -293,13 +293,13 @@ void process3() {
       int depo;
       cout << "Enter The Money You Need To Deposit\n";
       cin >> depo;
-      BlcCard2 += depo;
+      BlcCard3 += depo;
       cout << "Process Is Done\n";
 
       cout << "\nTo Know About Your Balance After This Process Enter 1\n";
       cin >> again2;
       if(again2 == true)
-        cout << "Your Balance Now Is: " << BlcCard2;
+        cout << "Your Balance Now Is: " << BlcCard3;
 
       break;
 
@@ -309,6 +309,7 @@ void process3() {
   }
   
 }
+
 
 
   
